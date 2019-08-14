@@ -4,6 +4,7 @@ body {
   line-height: 34px;
   color: #777777;
   background: url("../images/dust_scratches.jpg");
+  text-decoration: none;
 }
 
 * {
@@ -189,11 +190,7 @@ h3, h2 {
 }
 
 /* contact page */
-/*
-.main-section li {
-  text-decoration: none!important;
-}
-*/
+
 #contact-form ul {
   margin-bottom: 20px;
 }
@@ -241,16 +238,17 @@ input[type=submit] {
 
 @media only screen and (max-width: 640px) {
   #logo {
-    display: block;
+    display: inline-block;
     width: 100%;
   }
   nav {
-    float: left;
-    justify-content: center;
-  }
+    display: inline;
+  } 
   nav a {
-    display: inline-block;
+    /* display: inline-block; */
     margin-bottom: 25px;
     align-content: center;
+    justify-content: center;
   }
 }
+
