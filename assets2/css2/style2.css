@@ -73,7 +73,7 @@ section {
 .container {
     border-top: 2px solid #777777;
     padding-top: 20px;
-    position: relative;
+    position: relative; 
 }
 
 p {
