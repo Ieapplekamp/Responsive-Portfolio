@@ -4,7 +4,6 @@ body {
   line-height: 34px;
   color: #777777;
   background: url("../images/dust_scratches.jpg");
-  text-decoration: none;
 }
 
 * {
@@ -132,15 +131,10 @@ h3, h2 {
 
 /* main */
 
-#main-container {
-/*  padding-top: 130px; */
-  min-height: calc(100vh - 70px);
-}
-
 .main-section {
-  float: left;
+  display: table;
   width: 100%;
-  max-width: 960px;
+  max-width: 980px;
   padding: 30px;
   margin: 0 0 40px;
   background: #ffffff;
@@ -152,8 +146,9 @@ h3, h2 {
 .work {
   position: relative;
   float: left;
-  width: 274px;
+  width: 300px;
   margin: 20px 0 25px;
+  margin-left: 85px;
   overflow: auto;
 }
 
@@ -190,7 +185,10 @@ h3, h2 {
 }
 
 /* contact page */
-
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
 #contact-form ul {
   margin-bottom: 20px;
 }
@@ -235,20 +233,68 @@ input[type=submit] {
 768
 640
 */
+@media only screen and (max-width: 980px) {
+  .work {
+    margin-left: 70px;
+  }
+}
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 870px) {
+  .work {
+    margin-left: 45px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .work {
+    margin-left: 18px;
+  }
+}
+
+@media only screen and (max-width: 785px) {
+  .work {
+    width: 275px;
+    margin-left: 12px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .work {
+    margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 717px) {
+  .work {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 663px) {
   #logo {
     display: inline-block;
     width: 100%;
   }
+
   nav {
-    display: inline;
-  } 
+    float: none;
+    margin-left: 25%;
+  }
+/*
   nav a {
-    /* display: inline-block; */
-    margin-bottom: 25px;
-    align-content: center;
     justify-content: center;
+    align-items: center;
+  }
+  */
+  .work {
+    margin-left: 0;
+    width: 100%;;
+    height: auto;
+  }
+
+  .auth-image {
+    float: none;
+    width: 300px;
+    margin-left: 120px;
   }
 }
-
