@@ -53,8 +53,8 @@ h3 {
 /* header */
 
 #masthead {
- /* position: fixed; */
-  z-index: 99;
+ /* position: fixed; 
+  z-index: 99; */
   width: 100%;
   margin: 0 0 30px;
   overflow: auto;
@@ -146,9 +146,10 @@ h3, h2 {
 .work {
   position: relative;
   float: left;
-  width: 300px;
+  width: 325px;
+  height: auto;
   margin: 20px 0 25px;
-  margin-left: 85px;
+  margin-left: 75px;
   overflow: auto;
 }
 
@@ -235,50 +236,74 @@ input[type=submit] {
 */
 @media only screen and (max-width: 980px) {
   .work {
-    margin-left: 70px;
-  }
-}
-
-@media only screen and (max-width: 870px) {
-  .work {
     margin-left: 45px;
+    width: 265px;
+  }
+  #main-container {
+    width: 80%
+  }
+  #logo {
+    margin-left: 10%;
+  }
+  nav {
+    margin-right: 10%;
   }
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 920px) {
   .work {
-    margin-left: 18px;
+    display: inline-table;
+    width: 265px;
+    margin-left: 30px;
   }
 }
 
-@media only screen and (max-width: 785px) {
+@media only screen and (max-width: 880px) {
   .work {
-    width: 275px;
-    margin-left: 12px;
+    width: 250px;
+    margin-left: 20px;
   }
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 833px) {
   .work {
+    width: 240px;
     margin-left: 10px;
   }
 }
 
-@media only screen and (max-width: 717px) {
+@media only screen and (max-width: 768px) {
   .work {
-    width: 250px;
+    width: 230px;
+    margin-left: 5px;
   }
 }
 
-@media only screen and (max-width: 663px) {
+@media only screen and (max-width: 738px) {
+  .work {
+    margin-left: 0;
+    width: 215px;
+  }
+}
+
+@media only screen and (max-width: 687px) {
+  #marginhead {
+    position: static;
+  }
+  
   #logo {
     display: inline-block;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  #main-container {
     width: 100%;
   }
 
   nav {
     float: none;
-    margin-left: 25%;
+    margin-left: 23%;
   }
 /*
   nav a {
@@ -294,7 +319,7 @@ input[type=submit] {
 
   .auth-image {
     float: none;
-    width: 300px;
-    margin-left: 120px;
+    width: 75%;
+    margin-left: 50px;
   }
 }
