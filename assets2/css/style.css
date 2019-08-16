@@ -53,8 +53,6 @@ h3 {
 /* header */
 
 #masthead {
- /* position: fixed; 
-  z-index: 99; */
   width: 100%;
   margin: 0 0 30px;
   overflow: auto;
@@ -186,10 +184,12 @@ h3, h2 {
 }
 
 /* contact page */
+
 ul {
   list-style-type: none;
   padding-left: 0;
 }
+
 #contact-form ul {
   margin-bottom: 20px;
 }
@@ -232,8 +232,9 @@ input[type=submit] {
 /*  queries
 980 
 768
-640
+640 -Was having issues with scaling to 640 where the header would add a padding left at around 685px
 */
+
 @media only screen and (max-width: 980px) {
   .work {
     margin-left: 5.5%;
@@ -251,7 +252,7 @@ input[type=submit] {
   #logo {
     margin-left: 10%;
   }
-  
+
   nav {
     margin-right: 10%;
   }
