@@ -149,7 +149,7 @@ h3, h2 {
   width: 325px;
   height: auto;
   margin: 20px 0 25px;
-  margin-left: 75px;
+  margin-left: 70px;
   overflow: auto;
 }
 
@@ -236,61 +236,35 @@ input[type=submit] {
 */
 @media only screen and (max-width: 980px) {
   .work {
-    margin-left: 45px;
-    width: 265px;
+    margin-left: 5.5%;
+    width: 40%;
   }
+
+  .work:nth-child(even) {
+    margin-right: 20px;
+  }
+
   #main-container {
     width: 80%
   }
+
   #logo {
     margin-left: 10%;
   }
+  
   nav {
     margin-right: 10%;
   }
 }
 
-@media only screen and (max-width: 920px) {
-  .work {
-    display: inline-table;
-    width: 265px;
-    margin-left: 30px;
-  }
-}
-
-@media only screen and (max-width: 880px) {
-  .work {
-    width: 250px;
-    margin-left: 20px;
-  }
-}
-
-@media only screen and (max-width: 833px) {
-  .work {
-    width: 240px;
-    margin-left: 10px;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .work {
-    width: 230px;
-    margin-left: 5px;
-  }
-}
-
-@media only screen and (max-width: 738px) {
-  .work {
-    margin-left: 0;
-    width: 215px;
+    margin-bottom: 10px;
+    margin-left: 5%;
   }
 }
 
 @media only screen and (max-width: 687px) {
-  #marginhead {
-    position: static;
-  }
-  
   #logo {
     display: inline-block;
     width: 100%;
@@ -304,6 +278,7 @@ input[type=submit] {
   nav {
     float: none;
     margin-left: 23%;
+    line-height: 50px;
   }
 
   .work {
@@ -318,6 +293,8 @@ input[type=submit] {
     margin-left: 50px;
   }
 }
+
+/* for iphone */
 
 @media only screen and (max-width: 415px) {
   nav {
